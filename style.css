@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 100;
+    padding: 100;
+}
+
+li {
+    unicode-bidi: isolate;
+}
+
+.titulo_principal {
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    font-weight: 500;
+    font-size: xx-large;
+    color: white;
+}
+
+.nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: #ffd3dc;
+    padding: 0;
+    text-align: center;
+}
+
+.cabecalho .navegacao {
+    background-color: #ffd3dc;
+    width: 100%;
+    height: 60px;
+    display: flex; /* Define o container como flexbox */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+.cabecalho .navegacao ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cabecalho .navegacao ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.cabecalho .navegacao ul li>a {
+     width: 70%;
+     text-decoration: none;
+     color: white;
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+     font-optical-sizing: auto;
+     text-align: center;
+     font-size: medium;
+}
+
+
+
+.container_acao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    background-color: rgb(244, 230, 232);
+}
+
+.container_acao .container_acao_informacoes {
+    padding: 2rem 0;
+    width: 80%;
+    height: 80%;
+    background-color: #ffd3dc;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+}
+
+.container_acao_texto {
+    width: 100%;
+    height: 65%;
+}
+
+.container_acao_texto textarea {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+
+.botao_acao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%
+}
+
+.botao_acao_criptografar {
+    border: solid 1px palevioletred;
+    border-radius: 20px;
+    color: white;
+    background-color: palevioletred;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    width: 200px;
+    height: 47px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+}
+
+.botao_acao_descriptografar {
+    border: solid 1px #e94d7e;
+    border-radius: 20px;
+    color: white;
+    background-color: #FFB4C2;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    width: 200px;
+    height: 47px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+}
+
+.container_acao .container_resultado{
+    padding: 2rem 0;
+    width: 80%;
+    height: 80%;
+    background-color: #FFB4C2;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+}
+
+.container_resultado_titulo h1 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    padding: 0.2rem 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+}
+
+    
+.container_resultado_texto_criptografado {
+    width: 100%;
+    height: 65%
+}
+
+.container_resultado_texto_criptografado textarea {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    width: 90%;
+    height: 123%;
+    resize: none;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-image: url(img/download-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+     
+
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao">
+            <ul>
+                <li class="titulo_principal">
+                    Decodificador de Texto
+                </li>
+                <li>
+                    <a href="https://github.com/beateles"> GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/beatriz-teles-melo/      ">LinkedIN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container_acao">
+        <div class="container_acao_informacoes">
+            <div class="container_acao_texto">
+                <textarea placeholder="Digite seu texto..." id="codificar_texto" class="input_texto"></textarea> </div>
+            <div class="botao_acao"> 
+             <button class="botao_acao_criptografar">Criptografar</button>
+             <button class="botao_acao_descriptografar">Descriptografar</button> </div> 
+        </div>
+        <div class="container_resultado">
+            <div class="container_resultado_titulo">
+                <h1>Mensagem gerada</h1>
+            </div>
+            <div class="container_resultado_texto_criptografado">
+                <textarea id="texto_codificado"class="output_texto" style="background-image: url(img/download-removebg-preview.png)"></textarea>
+            </div>
+        </div>
+        <script src="app.js"></script>
+         </section>   
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
